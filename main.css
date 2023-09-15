@@ -1,3 +1,9 @@
+
+body{
+    font-family: 'Familjen Grotesk', sans-serif;
+font-size: 14pt;
+background-color: bisque;
+}
 h1 {
     font-family: monospace;
     font-size: 80pt;
@@ -28,14 +34,33 @@ li a {
 li a:hover:not(.active) {
   background-color: #111;
 }
-/* changes coloor of active tab */
+/* changes color of active tab */
 .active {
   background-color: #04AA6D;
 }
-
+#container { margin: 3%;
+    width: 750px;
+    height: 400px;
+    display: inline-block;
+}
+.bio {
+word-wrap: break-word;
+}
 /* cover image of me */
-img { 
-    width: 500px; height: 500px;
+img { margin: 5%;
+    width: 450px; height: 600px;
     object-fit: cover;
     border: #111 solid;
 }
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
